@@ -1,0 +1,303 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.container{
+    width: 100 vw;
+    height: 85vh;
+    background-color: #3b5d50;;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.logo_div{
+    width: 15vh;
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+#logo{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu_bar{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+h4{
+    font-weight: 500;
+    font-size: 18.5px;
+    color: white;
+    cursor: pointer;
+}
+.item::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: white;
+}
+.item:hover::after{
+    content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    background: white;
+    transition: 0.5s;
+}
+.item{
+    padding: 0px 30px;
+}
+#user{
+    padding: 0px 30px;
+    cursor: pointer;
+}
+#user:hover{
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+#cartl{
+    padding-left: 0px 30px;
+    cursor: pointer;
+}
+#cartl:hover{
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.hero{
+    width: 100%;
+    height: 35vw;
+    display: flex;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.page1_left{
+    width:25%;
+    height:calc(100%-15vh);
+    padding-left: 7%;
+    padding-top: 6%;
+}
+.page1_left h1{
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.page1_left h3{
+    font-size: 18.5px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+#exp{
+    padding: 16px 30px;
+    font-size: 16px;
+    background:#000;
+    border-radius: 29px;
+    color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    margin-top: 9%;
+    cursor: pointer;
+}
+#exp:hover{
+    border: 2px solid black;
+    transition: 0.3s;
+}
+#exp:active{
+    transform: scale(90%);
+    transition: 0.5s;
+}
+
+.page1_right{
+    width:62%;
+    margin-top: -5%;
+    height:calc(100%-15vh);
+    padding-top: 4%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.deals{
+    height: 450px;
+    width: 250px;
+    top:0%;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.deals #im{
+    height: 280px;
+    width: 230px;
+    position: absolute;
+    bottom: 20%;
+    background: transparent;
+    transition: 0.5s;
+}
+.deals .cross{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: 105px;
+    bottom: 20px;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.deals:hover .cross{
+    bottom: 2px;
+    background-color: #000;
+    z-index: 10;
+    visibility: visible;
+}
+.deals #name{
+    margin-left: 62px;
+    position: absolute;
+    bottom: 50px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+    transition: all ease 0.3s;
+}
+.deals #price{
+    margin-left: 85px;
+    position: absolute;
+    bottom: 30px;
+}
+.deals:hover #name{
+    bottom: 70px;
+}
+.deals:hover #price{
+    bottom: 45px;
+    visibility: visible;
+}
+.deals:active .cross{
+    transform: scale(80%);
+}
+.deals .bottom{
+    width: 250px;
+    height: 60%;
+    position: absolute;
+    border-radius:8px;
+    background-color :#c4dcf0c5;
+    bottom: -70%;
+    transition: all ease 0.5s;
+}
+.deals:hover .bottom{
+    bottom: 15px;
+}
+.deals:hover #im{
+    bottom: 25%;
+}
+
+.herol{
+    width:50%;
+    height:calc(100%-15vh);
+    padding-left: 7%;
+    padding-top: 8%;
+}
+#shop{
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 29px;
+    background-color: #f9bf29;
+    border: none;
+    margin-right: 5%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+#explore{
+    padding: 16px 30px;
+    font-size: 16px;
+    border-radius: 29px;
+    color: white;
+    border: 2px solid rgb(129, 129, 129);
+    font-weight: 600;
+    margin-top: 2%;
+    background: transparent;
+    cursor: pointer;
+}
+#explore:hover{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+#explore:active{
+    transform: scale(93%);
+    transition: 0.3s;
+}
+#shop:active{
+    transform: scale(93%);
+    transition: 0.3s all ease;
+}
+#shop:hover{
+    outline: 1px solid #797979;
+    outline-offset: -1;
+    transition: 0.3s all ease;
+}
+.heror{
+    width:50%;
+    height:100%;
+    overflow: hidden;
+}
+#couch{
+    width: 100%;
+    margin-top:50px;
+    background-image: url(/dots-light.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-y: 10% ;
+    background-position-x: 90%;
+}
+#couch:hover{
+    filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.100));
+    transition: 0.3s ease-out;
+}
+#head{
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+#h4{
+    font-size: 18.5px;
+    color: #eff2f1;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+#category{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border: white;
+    opacity: 100%;
+    position: fixed;
+    margin-left: -100%;
+    transition: 0.2s;
+    margin-top: 1%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: 0px 0px 15px #5c5c5c;
+}
+#category.active{
+    margin-left: 9%;
+}
