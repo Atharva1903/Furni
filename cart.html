@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Kurale&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .page1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            height:auto;
+        }
+        .page1_top{
+            width: 90%;
+            height: 15vh;
+            display: flex;
+            align-items:center;
+            margin-top: 20px;
+            bottom: 5px;
+            justify-content: space-around;
+            border-bottom: 2px solid gray;
+        }
+        .cart_main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center ;
+            width: 90%;
+            height: 30%;
+            padding-top: 3px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 200px;
+            margin-top: 30px;
+        }
+        .row h3{
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+        }
+        .row button{
+            height: 100%;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_g">
+        <div class="nav">
+            <div class="logo_div">
+                <h2 id="logo">Furni</h2>
+            </div>
+            <div class="menu_bar">
+                <a href="index.html" style="text-decoration: none;"><h4 class="item" style="text-decoration: none;">Home</h4></a>
+                <h4 class="item">Shop</h4>
+                <h4 class="item" id="item" onclick="hide()">Category</h4>
+                <h4 class="item">Contact us</h4>
+                <div class="cart">
+                    <a href="Login.html"><img id="user" src="user.svg"></a>
+                    <a href="cart.html"><img id="cartl" src="cart.svg"></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="game_head">Cart</h1>
+    </div>
+    <div class="page1">
+        <div class="page1_top">
+            <h2 class="att">Image</h2>
+            <h2 class="att">Product</h2>
+            <h2 class="att">Price</h2>
+            <h2 class="att">Remove</h2>
+        </div>
+        <div class="cart_main">
+            <div class="row">
+                <img src="/deal1.png">
+                <h3>Chair</h3>
+                <h3>Price</h3>
+                <button>X</button>
+            </div>
+            <div class="row">
+                <img src="/product-1.png">
+                <h3>Chair</h3>
+                <h3>Price</h3>
+                <button>X</button>
+            </div>
+ 
+        </div>
+   </div>
+        <div class="foot">
+            <div class="footl">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="footr">
+                <form>
+                    <h3>Name</h3>
+                    <input type="text" placeholder="Name" class="contact_inp">
+                    <h3>Email</h3>
+                    <input type="text" placeholder="Email" class="contact_inp">
+                    <h3>Message</h3>
+                    <textarea type="text" placeholder="Message" class="contact_inp" style="height: 30%;"></textarea>
+                    <button type="submit" class="contact_btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function hide(){
+            document.getElementById("category").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

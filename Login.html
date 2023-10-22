@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Kurale&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Kurale&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
     <style>
         *{
             margin: 0%;
             padding: 0%;
         }
-        .container{
+        .containers{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            height: 100vh;
+            height: 104%;
             background-color: #3b5d50;
         }
         .login{
@@ -81,13 +82,6 @@
             font-family: 'Roboto', sans-serif;
             cursor: pointer;
         }
-        .reset{
-            color: rgb(79, 79, 79);
-            font-size: 12px;
-            margin-left: 10px;
-            font-family: 'Roboto', sans-serif;
-            cursor: pointer;
-        }
         button:hover{
             background-color: #ffb700;
         }
@@ -98,6 +92,23 @@
 </head>
 <body>
     <div class="container">
+        <div class="nav">
+            <div class="logo_div">
+                <h2 id="logo">Furni</h2>
+            </div>
+            <div class="menu_bar">
+                <a href="index.html"  style="text-decoration: none;"><h4 class="item" style="text-decoration: none;">Home</h4></a>
+                <h4 class="item">Shop</h4>
+                <h4 class="item" id="item" onclick="hide()">Category</h4>
+                <h4 class="item">Contact us</h4>
+                <div class="cart">
+                    <a href="Login.html"><img id="user" src="user.svg"></a>
+                    <a href="cart.html"><img id="cartl" src="cart.svg"></a>
+                </div>
+            </div>
+            
+        </div>
+    <div class="containers">
         <div class="login">
             <h1>Login</h1>
             <form name="f1">
@@ -105,10 +116,9 @@
                 <input type="text" name="nm" placeholder="Username">
                 Password:
                 <input type="password" name="pass" placeholder="Password" style="margin-bottom: 0px;">
-                <h4 class="reset">Reset Password</h4>
                 <br>
                 <button>Sign in</button>
-                <h4 style="text-align: center;" class="new">Create New Account</h4>
+                <a href="Signup.html"><h4 style="text-align: center;" class="new">Create New Account</h4></a>
             </form>
         </div>
     </div>
