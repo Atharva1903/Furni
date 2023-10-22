@@ -9,12 +9,26 @@
     height: 85vh;
     background-color: #3b5d50;;
 }
+.container_g{
+    width: 100 vw;
+    height: 40vh;
+    background-color: #3b5d50;;
+}
 .nav{
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+}
+.game_head{
+    font-size: 50px;
+    padding: 3% 5%;
+    color:white;
+}
+.line1{
+    display: flex;
+    justify-content: space-around;
 }
 .logo_div{
     width: 15vh;
@@ -84,11 +98,24 @@ h4{
 }
 .page1{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     
 }
 .page1_left{
+    width:25%;
+    height:calc(100%-15vh);
+    padding-left: 7%;
+    padding-top: 6%;
+}
+.page2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+
+    
+}
+.page2_left{
     width:25%;
     height:calc(100%-15vh);
     padding-left: 7%;
@@ -117,7 +144,8 @@ h4{
     cursor: pointer;
 }
 #exp:hover{
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
+    background: #242424;
     transition: 0.3s;
 }
 #exp:active{
@@ -134,9 +162,18 @@ h4{
     display: flex;
     justify-content: space-between;
 }
+.page2_right{
+    width:62%;
+    margin-top: -5%;
+    height:calc(100%-15vh);
+    padding-top: 4%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 .deals{
     height: 450px;
-    width: 250px;
+    width: 300px;
     top:0%;
     border-radius: 6px;
     position: relative;
@@ -144,7 +181,8 @@ h4{
 }
 .deals #im{
     height: 280px;
-    width: 230px;
+    width: 260px;
+    left: 20px;
     position: absolute;
     bottom: 20%;
     background: transparent;
@@ -156,7 +194,7 @@ h4{
     border-radius: 50%;
     padding: 5px;
     position: absolute;
-    margin-left: 105px;
+    margin-left: 135px;
     bottom: 20px;
     transition: 0.5s;
     visibility: hidden;
@@ -168,7 +206,7 @@ h4{
     visibility: visible;
 }
 .deals #name{
-    margin-left: 62px;
+    margin-left: 92px;
     position: absolute;
     bottom: 50px;
     font-family: 'poppins', sans-serif;
@@ -176,7 +214,7 @@ h4{
     transition: all ease 0.3s;
 }
 .deals #price{
-    margin-left: 85px;
+    margin-left: 110px;
     position: absolute;
     bottom: 30px;
 }
@@ -191,16 +229,16 @@ h4{
     transform: scale(80%);
 }
 .deals .bottom{
-    width: 250px;
+    width: 300px;
     height: 60%;
     position: absolute;
     border-radius:8px;
-    background-color :#c4dcf0c5;
+    background-color :#ddeefb7f;
     bottom: -70%;
     transition: all ease 0.5s;
 }
 .deals:hover .bottom{
-    bottom: 15px;
+    bottom:3.5%;
 }
 .deals:hover #im{
     bottom: 25%;
@@ -300,4 +338,66 @@ h4{
 }
 #category.active{
     margin-left: 9%;
+}
+.foot{
+    width: 100%;
+    height: 80vh;
+    background-color: #3b5d50;
+    margin-top: 3%;
+    display: flex;
+}
+.footl{
+    width: 50%;
+    height: 80vh;
+}
+.footr{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footl h1{
+    font-size: 40px;
+    color: white;
+    padding: 5% 12%;
+}
+.footr form{
+    width:50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_inp{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.footr h3{
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact_btn {
+    background-color: #007BFF;
+    color: #fff;
+    width: 105%;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 7%;
+    height: 56px;
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
 }
