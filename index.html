@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +13,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav">
+        <div class="nav" id="nav">
+
             <div class="logo_div">
                 <h2 id="logo">Furni</h2>
             </div>
+
             <div class="menu_bar">
                 <a href="index.html" style="text-decoration: none;"><h4 class="item" style="text-decoration: none;">Home</h4></a>
                 <a href="#page1" style="text-decoration: none;"><h4 class="item">Shop</h4></a>
@@ -26,17 +29,15 @@
                     <a href="cart.html"><img id="cartl" src="cart.svg"></a>
                 </div>
             </div>
-            
         </div>
-        <div class="hero">
-            <div id="category">
-
-            </div>
+        <div class="category" id="category">
+        </div>
+        <div class="hero" id="hero">
             <div class="herol">
-                <h1 id="head">Modern Interior Design Studio</h1><br>
-                <h3 id="h4">Discover Your Perfect Piece: Furniture for Every Home</h3><br>
-                <button id="shop">Shop Now</button>
-                <button id="explore">Explore</button>
+                <h1 id="head">Modern Interior <br>Design Studio</h1><br>
+                <h3 id="h4">Discover Your Perfect Piece: Furniture for Every Home</h3><br><br>
+                <a  href="#page1"><button id="shop">Shop Now</button></a>
+                <a  href="#page1"><button id="explore">Explore</button></a>
             </div>
             <div class="heror">
                 <img id="couch" src="couch.png" alt="">
@@ -46,40 +47,71 @@
             <div class="page1_left">
                 <h1>Deals Of The<br> Day</h1><br>
                 <h3>Quality furniture, unbeatable prices - explore our daily steals.</h3> 
-                <button id="exp">Explore</button>
+                <a href="#nav"><button id="exp">Explore</button></a>
             </div>
             <div class="page1_right">
                 <div class="deals">
                     <div class="bottom"></div>
                     <img src="product-1.png" id="im">
                     <h3 id="name">Nordic Chair</h3><h3 id="price">Rs.3000</h3>
-                    <img src="cross.svg" class="cross">
+                    <a href="cart.html"><img src="cross.svg" class="cross"></a>
                 </div>
                 
                 <div class="deals">
                     <div class="bottom"></div>
                     <img src="g1.png" id="im">
                     <h3 id="name">Gaming Chair</h3><h3 id="price">Rs.8000</h3>
-                    <img src="cross.svg" class="cross">
+                    <a href="cart.html"><img src="cross.svg" class="cross"></a>
                 </div>
                 <div class="deals">
                     <div class="bottom"></div>
                     <img src="office1-removebg-preview.png " id="im" style="height: 300px;">
                     <h3 id="name">Office Chair</h3><h3 id="price">Rs.5000</h3>
-                    <img src="cross.svg" class="cross">
+                    <a href="cart.html"><img src="cross.svg" class="cross"></a>
 
                 </div>
             </div>
        </div>
        <div class="page2">
-            <div class="page2_left"></div>
-            <div class="page2_right"></div>
+            <div class="page2_left">
+                <h1>Why choose us</h1>
+            </div>
+            <div class="page2_right">
+                <img src="img-grid-2.jpg">
+            </div>
        </div>
         <div class="foot" id="foot">
             <div class="footl">
                 <h1>Contact Us</h1>
+                <div class="con">
+                <div class="follow">
+                    <h2 id="logo" style="color: rgb(53, 53, 53);">Furni</h2>
+                    <a href="#" class="fa fa-brands fa-facebook" id="ss"></a> 
+                    <a href="#" class="fa fa-brands fa-instagram" id="ss"></a> 
+                    <a href="#" class="fa fa-brands fa-twitter" id="ss"></a>
+                    <a href="#" class="fa fa-brands fa-linkedin" id="ss"></a>
+                </div>
+                <div class="links">
+                <h2>Site Links</h2>
+                    <a href="#hero">Home</a>
+                    <a href="">About us</a>
+                    <a href="">Shop</a>
+                    <a href="#page1">Explore</a>
+                </div>
+                <div class="service">
+                    <h2>Service & Contacts</h2>
+                    <a href="">Contact us</a>
+                    <a href="">Customer care</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy</a>
+                </div>
+            </div>
+            <div class="copy">
+                <h3>© 2023 Furni. All rights reserved. Unauthorized duplication or distribution is prohibited.</h3>
+            </div>
             </div>
             <div class="footr">
+                <img src="sofa.png">
                 <form>
                     <h3>Name</h3>
                     <input type="text" placeholder="Name" class="contact_inp">

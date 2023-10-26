@@ -116,12 +116,6 @@ h4{
 
     
 }
-.page2_left{
-    width:25%;
-    height:calc(100%-15vh);
-    padding-left: 7%;
-    padding-top: 6%;
-}
 .page1_left h1{
     font-size: 45px;
     font-family: 'Inter', sans-serif;
@@ -163,14 +157,25 @@ h4{
     display: flex;
     justify-content: space-between;
 }
+.page2_left{
+    width:50%;
+    height:calc(100%-15vh);
+    padding-left: 7%;
+    padding-top: 6%;
+}
 .page2_right{
-    width:62%;
+    width:50%;
     margin-top: -5%;
     height:calc(100%-15vh);
-    padding-top: 4%;
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-between;
+    background: url(/dots-yellow.svg);
+    background-repeat: no-repeat;
+}
+.page2_right img{
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+    height: 90%;
 }
 .deals{
     height: 450px;
@@ -322,13 +327,14 @@ h4{
 .foot{
     width: 100%;
     height: 80vh;
-    background-color: #3b5d50;
-    margin-top: 3%;
+    background-color: rgb(255, 251, 244);
+    margin-top: 10%;
     display: flex;
 }
 .footl{
     width: 50%;
     height: 80vh;
+    padding-left: 5%;
 }
 .footr{
     margin: 0;
@@ -336,17 +342,25 @@ h4{
     height: 80vh;
     width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
+}
+.footr img{
+    transform: scale(60%);
+    margin-top: -40%;
+    margin-left: 40%;
 }
 .footl h1{
     font-size: 40px;
-    color: white;
+    color: rgb(53, 53, 53);
     padding: 5% 12%;
 }
 .footr form{
     width:50%;
     height: 75%;
+    margin-top: -20%;
+    margin-left: -10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,21 +370,21 @@ h4{
     padding: 10px;
     margin: 5px 0;
     outline: none;
-    border: none;
+    border: 1px solid gray;
     margin-bottom: 15px;
     border-radius: 3px;
     font-size: 16px;
 }
 .footr h3{
-    color: white;
+    color: rgb(53, 53, 53);
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 400;
 }
 
 .contact_btn {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #f9bf29;
+    color: #000;
     width: 105%;
     font-size: 18px;
     font-weight: 500;
@@ -381,3 +395,50 @@ h4{
     border: none;
     cursor: pointer;
 }
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    gap: 10px;
+}
+.con h2{
+    color: rgb(53, 53, 53);
+}
+.con a{
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+}
+.con{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 200px;
+    gap: 10px;
+
+}
+
+.follow a{
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.copy{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+
+
+
+
