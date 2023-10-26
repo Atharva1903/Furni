@@ -113,8 +113,7 @@ h4{
     width: 100%;
     height: 80vh;
     display: flex;
-
-    
+    margin-top: 5%;
 }
 .page1_left h1{
     font-size: 45px;
@@ -161,7 +160,38 @@ h4{
     width:50%;
     height:calc(100%-15vh);
     padding-left: 7%;
-    padding-top: 6%;
+    margin-top: -5%;
+    color:rgb(53, 53, 53);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.page2_left img{
+    display: block;
+}
+.ri h4{
+    color:black;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-bottom: 2%;
+}
+.r1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:rgb(100, 100, 100) ;
+    margin-top: 3%;
+}
+.r2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3%;
+    color:rgb(100, 100, 100) ;
+}
+.ri{
+    padding: 5%;
 }
 .page2_right{
     width:50%;
@@ -169,6 +199,11 @@ h4{
     height:calc(100%-15vh);
     background: url(/dots-yellow.svg);
     background-repeat: no-repeat;
+}
+.page2 h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    margin-bottom: 4%;
 }
 .page2_right img{
     border-radius: 10px;
@@ -239,7 +274,7 @@ h4{
     height: 60%;
     position: absolute;
     border-radius:8px;
-    background-color :#ddeefb7f;
+    background-color :#dce5e4;
     bottom: -70%;
     transition: all ease 0.5s;
 }
@@ -395,6 +430,9 @@ h4{
     border: none;
     cursor: pointer;
 }
+.contact_btn:hover{
+    background-color: #f0b624;
+}
 .links{
     display: flex;
     flex-direction: column;
@@ -434,10 +472,38 @@ h4{
     font-size: 16px;
     color: rgb(53, 53, 53);
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
     margin-top: 10%;
 }
-
+.drop li a{
+    text-decoration: none;  
+}
+.drop li{
+    color: white;
+    font-family: 'poppins',sans-serif;
+    font-size: 16px;
+    padding: 8px;
+}
+.drop li:hover{
+    background-color: #3b5d50;
+    cursor: pointer;
+}
+#drop{
+    list-style-type: none;
+    width:120px;
+    height: 120px;
+    display: block;
+    background-color:#273d35;
+    border: 1px solid rgb(161, 161, 161);
+    border-top: none;
+    text-align: center;
+    margin-top: -15%;
+    margin-left: 14.5%;
+    position: absolute;
+}
+#drop .active{
+    margin-top: 10%;
+}
 
 
 

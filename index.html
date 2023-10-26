@@ -24,6 +24,11 @@
                 <a href="#page1" style="text-decoration: none;"><h4 class="item">Shop</h4></a>
                 <h4 class="item" id="item" onclick="hide()">Category</h4>
                 <a href="#foot" style="text-decoration: none;"><h4 class="item">Contact us</h4></a>
+                <ul class="drop" id="drop">
+                    <a><li>Office</li></a>
+                    <a><li>Home</li></a>
+                    <a><li>Gaming</li></a>
+                </ul>
                 <div class="cart">
                     <a href="Login.html"><img id="user" src="user.svg"></a>
                     <a href="cart.html"><img id="cartl" src="cart.svg"></a>
@@ -75,6 +80,31 @@
        <div class="page2">
             <div class="page2_left">
                 <h1>Why choose us</h1>
+                "Choose us for exceptional quality, timeless designs,and personalized <br>service – turning your home into a masterpiece of comfort <br>and style."
+                <div class="r1">
+                    <div class="ri">
+                        <img src="truck.svg">
+                        <h4>Fast & Free Shipping</h4>
+                        Enjoy swift, free shipping for a hassle-free furniture shopping experience.
+                    </div>
+                    <div class="ri">
+                        <img src="bag.svg" alt="">
+                        <h4>Easy to Shop</h4>
+                        Simplified shopping, effortless choices - making your experience memorable and enjoyable.
+                    </div>
+                </div>
+                <div class="r2">
+                    <div class="ri">
+                        <img src="support.svg" alt="">
+                        <h4>24/7 Support</h4>
+                        Dedicated support, always here to help - your satisfaction guaranteed.
+                    </div>
+                    <div class="ri">
+                        <img src="return.svg" alt="">
+                        <h4>Hassel Free Returns</h4>
+                        Seamless returns for stress-free shopping satisfaction – your peace of mind.
+                    </div>
+                </div>
             </div>
             <div class="page2_right">
                 <img src="img-grid-2.jpg">
@@ -82,7 +112,7 @@
        </div>
         <div class="foot" id="foot">
             <div class="footl">
-                <h1>Contact Us</h1>
+                <h1 style="font-family: 'Poppins',sans-serif;">Contact Us</h1>
                 <div class="con">
                 <div class="follow">
                     <h2 id="logo" style="color: rgb(53, 53, 53);">Furni</h2>
@@ -126,7 +156,7 @@
     </div>
     <script>
         function hide(){
-            document.getElementById("category").classList.toggle("active");
+            document.getElementById("drop").classList.toggle("active");
         }
     </script>
 </body>
