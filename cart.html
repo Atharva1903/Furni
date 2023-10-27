@@ -90,13 +90,13 @@
             <div class="row">
                 <img src="deal1.png">
                 <h3>Chair</h3>
-                <h3>Price</h3>
+                <h3>3500</h3>
                 <button>X</button>
             </div>
             <div class="row">
                 <img src="product-1.png">
                 <h3>Chair</h3>
-                <h3>Price</h3>
+                <h3>3000</h3>
                 <button>X</button>
             </div>
  
@@ -104,14 +104,14 @@
    </div>
    <div class="foot" id="foot">
     <div class="footl">
-        <h1>Contact Us</h1>
+        <h1 style="font-family: 'Poppins',sans-serif;">Contact Us</h1>
         <div class="con">
         <div class="follow">
-            <h2 id="logo">Furni</h2>
-            <a href="#" class="fa fa-facebook"></a> 
-            <a href="#" class="fa fa-instagram"></a> 
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <h2 id="logo" style="color: rgb(53, 53, 53);">Furni</h2>
+            <a href="#" class="fa fa-brands fa-facebook" id="ss"></a> 
+            <a href="#" class="fa fa-brands fa-instagram" id="ss"></a> 
+            <a href="#" class="fa fa-brands fa-twitter" id="ss"></a>
+            <a href="#" class="fa fa-brands fa-linkedin" id="ss"></a>
         </div>
         <div class="links">
         <h2>Site Links</h2>
@@ -128,15 +128,19 @@
             <a href="">Privacy</a>
         </div>
     </div>
+    <div class="copy">
+        <h3>© 2023 Furni. All rights reserved. Unauthorized duplication or distribution is prohibited.</h3>
+    </div>
     </div>
     <div class="footr">
-        <form>
+        <img src="sofa.png">
+        <form name="f1">
             <h3>Name</h3>
-            <input type="text" placeholder="Name" class="contact_inp">
+            <input type="text" placeholder="Name" class="contact_inp" onblur="nameentered()" name="name">
             <h3>Email</h3>
-            <input type="text" placeholder="Email" class="contact_inp">
+            <input type="text" placeholder="Email" class="contact_inp" onblur="emailentered()" name="email">
             <h3>Message</h3>
-            <textarea type="text" placeholder="Message" class="contact_inp" style="height: 30%;"></textarea>
+            <textarea type="text" placeholder="Message" class="contact_inp" style="height: 30%;" required></textarea>
             <button type="submit" class="contact_btn">Send</button>
         </form>
     </div>

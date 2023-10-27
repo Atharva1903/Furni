@@ -131,9 +131,10 @@
                 }
         }
         function VerifyPass(){
-            var pw = "Athu_1903"
+            var pw = "Athu_1903";
                 with(document.forms.f1){
-                    if(!pw.equals(pass.value)){
+                    var b = pass.value;
+                    if(pw != b){
                         alert("Incorrect Password!")
                     }
                 }
