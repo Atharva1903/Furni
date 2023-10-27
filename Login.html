@@ -113,14 +113,31 @@
             <h1>Login</h1>
             <form name="f1">
                 Username:
-                <input type="text" name="nm" placeholder="Username">
+                <input type="text" name="name" placeholder="Username" onblur="nameentered()">
                 Password:
                 <input type="password" name="pass" placeholder="Password" style="margin-bottom: 0px;">
                 <br>
-                <button>Sign in</button>
+                <button onclick="VerifyPass()">Sign in</button>
                 <a href="Signup.html"><h4 style="text-align: center;" class="new">Create New Account</h4></a>
             </form>
         </div>
     </div>
+    <script>
+        function nameentered() {
+                with(document.forms.f1){
+                    if(name.value == "") {
+                        alert("Please enter name");
+                    }
+                }
+        }
+        function VerifyPass(){
+            var pw = "Athu_1903"
+                with(document.forms.f1){
+                    if(!pw.equals(pass.value)){
+                        alert("Incorrect Password!")
+                    }
+                }
+        }
+    </script>
 </body>
 </html>

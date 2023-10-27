@@ -113,15 +113,45 @@
             <h1>Login</h1>
             <form name="f1">
                 Username:
-                <input type="text" name="nm" placeholder="Username">
+                <input type="text" name="name" placeholder="Username" required onblur="nameentered()">
                 Password:
-                <input type="password" name="pass" placeholder="Password" style="margin-bottom: 24px;">
+                <input type="password" name="pass" placeholder="Password" style="margin-bottom: 24px;" required onblur="CheckPassword()">
                 Verify Password:
-                <input type="password" name="v_pass" placeholder="Password" style="margin-bottom: 0px;">
+                <input type="password" name="v_pass" placeholder="Password" style="margin-bottom: 0px;" required >
                 <br>
-                <button>Sign up</button>
+                <button onclick="VerifyPass()">Sign up</button>
             </form>
         </div>
     </div>
+    <script>
+        var exp_date = new Date();
+        exp_date.setMonth(exp_date.getMonth() + 1);
+            function nameentered() {
+                with(document.forms.f1){
+                    if(name.value == "") {
+                        alert("Please enter name");
+                    }
+                }
+            }
+            function CheckPassword(){ 
+                var passw=  /^[A-Za-z]\w{7,14}$/;
+                if(document.forms.f1.pass.value.match(passw)) { 
+                }
+                else{ 
+                    alert('Wrong...!')
+                }
+            }
+            function VerifyPass(){
+                with(document.forms.f1){
+                    if(pass.value != v_pass.value){
+                        alert("Password don't match!")
+                    }
+                    else{
+                        document.cookie = "Username="+name.value + ";expires=" + exp_date.toGMTString();
+                        document.cookie = "Password="+pass.value + ";expires=" + exp_date.toGMTString();
+                    }
+                }
+            }
+    </script>
 </body>
 </html>

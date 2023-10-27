@@ -142,13 +142,13 @@
             </div>
             <div class="footr">
                 <img src="sofa.png">
-                <form>
+                <form name="f1">
                     <h3>Name</h3>
-                    <input type="text" placeholder="Name" class="contact_inp">
+                    <input type="text" placeholder="Name" class="contact_inp" onblur="nameentered()" name="name">
                     <h3>Email</h3>
-                    <input type="text" placeholder="Email" class="contact_inp">
+                    <input type="text" placeholder="Email" class="contact_inp" onblur="emailentered()" name="email">
                     <h3>Message</h3>
-                    <textarea type="text" placeholder="Message" class="contact_inp" style="height: 30%;"></textarea>
+                    <textarea type="text" placeholder="Message" class="contact_inp" style="height: 30%;" required></textarea>
                     <button type="submit" class="contact_btn">Send</button>
                 </form>
             </div>
@@ -157,6 +157,20 @@
     <script>
         function hide(){
             document.getElementById("drop").classList.toggle("active");
+        }
+        function nameentered() {
+                with(document.forms.f1){
+                    if(name.value == "") {
+                        alert("Please enter name");
+                    }
+                }
+            }
+        function emailentered() {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(f1.email.value)){
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+                return (false)
         }
     </script>
 </body>
